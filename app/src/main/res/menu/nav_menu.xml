@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/change_password"
+            android:title="修改密码"/>
+        <item
+            android:id="@+id/nav_change_admin"
+            android:icon="@drawable/change_admin"
+            android:title="切换用户"/>
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@drawable/update"
+            android:title="系统升级"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/nav_about"
+            android:title="关于+反馈"/>
+
+    </group>
+</menu>

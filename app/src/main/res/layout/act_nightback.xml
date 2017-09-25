@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.autism.tl.controlhelper.ui.view.CommonTopLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <com.autism.tl.controlhelper.ui.view.AutoEditView
+                android:id="@+id/icv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                app:icv_et_bg_focus="@drawable/autoedit_bg_focus"
+                app:icv_et_bg_normal="@drawable/autoedit_bg_normal"
+                app:icv_et_divider_drawable="@drawable/autoedit_divider"
+                app:icv_et_number="5"
+                app:icv_et_text_color="@color/black"
+                app:icv_et_width="50dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="50dp"
+                android:background="@color/line_grey"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/student_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <Button
+                android:id="@+id/input_achieve"
+                android:layout_height="50dp"
+                android:layout_width="250dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_button"
+                android:text="录入完成"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

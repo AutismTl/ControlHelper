@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.autism.tl.controlhelper.ui.view.CommonTopLayout
+            android:id="@+id/r_top"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_below="@id/r_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_common">
+            <ImageView
+                android:id="@+id/image"
+                app:layout_heightPercent="29%"
+                app:layout_widthPercent="30%"
+                android:layout_alignParentTop="true"
+                android:layout_margin="1px"
+                android:src="@drawable/test"/>
+
+            <LinearLayout
+                android:id="@+id/name"
+                app:layout_heightPercent="7%"
+                app:layout_widthPercent="70%"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_toRightOf="@id/image">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="姓名"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/medium_grey"/>
+                <TextView
+                    android:id="@+id/t_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:text="唐亮"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/dull_grey"
+                    android:textIsSelectable="true" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="2px"
+                app:layout_widthPercent="70%"
+                android:layout_below="@id/name"
+                android:layout_toRightOf="@id/image"
+                android:background="@color/line_grey"/>
+
+
+            <LinearLayout
+                android:id="@+id/sex"
+                app:layout_heightPercent="7%"
+                app:layout_widthPercent="70%"
+                android:layout_marginTop="2px"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_toRightOf="@id/image"
+                android:layout_below="@id/name">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="性别"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/medium_grey"/>
+                <TextView
+                    android:id="@+id/t_sex"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:text="男"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/dull_grey"
+                    android:textIsSelectable="true" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="2px"
+                app:layout_widthPercent="70%"
+                android:layout_below="@id/sex"
+                android:layout_toRightOf="@id/image"
+                android:background="@color/line_grey"/>
+
+            <LinearLayout
+                android:id="@+id/ss"
+                app:layout_heightPercent="7%"
+                app:layout_widthPercent="70%"
+                android:layout_marginTop="2px"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_toRightOf="@id/image"
+                android:layout_below="@id/sex">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="宿舍"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/medium_grey"/>
+                <TextView
+                    android:id="@+id/t_ss"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:text="7-6-510"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/dull_grey"
+                    android:textIsSelectable="true" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="2px"
+                app:layout_widthPercent="70%"
+                android:layout_below="@id/ss"
+                android:layout_toRightOf="@id/image"
+                android:background="@color/line_grey"/>
+
+
+            <LinearLayout
+                android:id="@+id/qq"
+                app:layout_heightPercent="7%"
+                app:layout_widthPercent="70%"
+                android:layout_marginTop="2px"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_toRightOf="@id/image"
+                android:layout_below="@id/ss">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="QQ"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/medium_grey"/>
+                <TextView
+                    android:id="@+id/t_qq"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:text="840209925"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/dull_grey"
+                    android:textIsSelectable="true" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="3px"
+                app:layout_widthPercent="100%"
+                android:layout_below="@id/qq"
+                android:background="@color/line_grey"/>
+
+
+            <View
+                android:layout_height="3px"
+                android:layout_width="match_parent"
+                android:layout_below="@id/qq"
+                android:layout_marginTop="18dp"
+                android:background="@color/line_grey"/>
+
+            <LinearLayout
+                android:id="@+id/xh"
+                app:layout_heightPercent="7%"
+                app:layout_widthPercent="100%"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_below="@id/qq">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="学号"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/medium_grey"/>
+                <TextView
+                    android:id="@+id/t_xh"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:text="1503040213"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/dull_grey"
+                    android:textIsSelectable="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_height="2px"
+                android:layout_width="match_parent"
+                android:layout_below="@id/xh"
+                android:background="@color/line_grey"/>
+
+            <LinearLayout
+                android:id="@+id/s_number"
+                app:layout_heightPercent="7%"
+                app:layout_widthPercent="100%"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="2px"
+                android:layout_below="@id/xh">
+                <TextView
+                    android:id="@+id/snumber"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="学生号码"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/medium_grey"/>
+                <TextView
+                    android:id="@+id/t_s_number"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:text="18390246202"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/dull_grey"
+                    android:textIsSelectable="true" />
+
+                <Button
+                    android:id="@+id/s_call"
+                    android:layout_width="40dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/call"
+                    android:layout_marginRight="20dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="2px"
+                android:layout_width="match_parent"
+                android:layout_below="@id/s_number"
+                android:background="@color/line_grey"/>
+
+            <LinearLayout
+                android:id="@+id/p_number"
+                app:layout_heightPercent="7%"
+                app:layout_widthPercent="100%"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="2px"
+                android:layout_below="@id/s_number">
+                <TextView
+                    android:id="@+id/pnumber"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="家长号码"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/medium_grey"/>
+                <TextView
+                    android:id="@+id/t_p_number"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:text="13875737762"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/dull_grey"
+                    android:textIsSelectable="true" />
+
+                <Button
+                    android:id="@+id/p_call"
+                    android:layout_width="40dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/call"
+                    android:layout_marginRight="20dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="3px"
+                android:layout_width="match_parent"
+                android:layout_below="@id/p_number"
+                android:background="@color/line_grey"/>
+
+            <View
+                android:layout_height="3px"
+                android:layout_width="match_parent"
+                android:layout_below="@id/p_number"
+                android:layout_marginTop="18dp"
+                android:background="@color/line_grey"/>
+
+
+            <LinearLayout
+                android:id="@+id/address"
+                app:layout_heightPercent="12%"
+                app:layout_widthPercent="100%"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/p_number">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="家庭住址"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/medium_grey"/>
+                <TextView
+                    android:id="@+id/t_address"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:text="湖南省衡阳市珠晖区红星菜园6栋七单元109"
+                    android:layout_marginLeft="30dp"
+                    android:lines="2"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:textColor="@color/dull_grey"
+                    android:textIsSelectable="true" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="3px"
+                android:layout_width="match_parent"
+                android:layout_below="@id/address"
+                android:background="@color/line_grey"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/bg_button"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="违规制度说明"/>
+
+        <include layout="@layout/common_fab" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header"/>
+</android.support.v4.widget.DrawerLayout>
+

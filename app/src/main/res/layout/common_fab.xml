@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.clans.fab.FloatingActionMenu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="45dp"
+        android:paddingLeft="10dp"
+        app:menu_showShadow="true"
+        app:menu_shadowColor="#66000000"
+        app:menu_shadowRadius="2dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="3dp"
+        app:menu_colorNormal="@color/white"
+        app:menu_colorPressed="@color/colorAccent"
+        app:menu_colorRipple="@color/themecolor_2"
+        app:menu_icon="@drawable/mores"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_singleLine="true"
+        app:menu_backgroundColor="#ccffffff">
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/white"
+        app:fab_colorPressed="@color/colorAccent"
+        app:fab_label="成绩"
+        app:fab_size="mini" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/white"
+        app:fab_colorPressed="@color/colorAccent"
+        app:fab_label="违纪"
+        app:fab_size="mini" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/white"
+        app:fab_colorPressed="@color/colorAccent"
+        app:fab_label="晚归"
+        app:fab_size="mini" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/white"
+        app:fab_colorPressed="@color/colorAccent"
+        app:fab_label="缺课"
+        app:fab_size="mini"
+        />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/white"
+        app:fab_colorPressed="@color/colorAccent"
+        app:fab_label="早签"
+        app:fab_size="mini"
+        />
+</com.github.clans.fab.FloatingActionMenu>

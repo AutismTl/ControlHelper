@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp">
+
+    <TextView
+        android:id="@+id/punish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18dp"
+        android:textColor="@color/dull_grey"
+        android:text="周一早签未到"
+        />
+    <TextView
+        android:id="@+id/punish_person"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/punish_name"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="15dp"
+        android:textColor="@color/medium_grey"
+        android:text="唐亮"
+        />
+    <TextView
+        android:id="@+id/punish_date"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="13dp"
+        android:textColor="@color/light_grey"
+        android:text="2017-06-15"
+        />
+
+</RelativeLayout>

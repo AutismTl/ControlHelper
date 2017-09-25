@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_achieve_root"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.autism.tl.controlhelper.ui.view.CommonTopLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/student_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:drawable/edit_text"
+                android:hint="请输入课程名"
+                android:visibility="gone"
+                />
+            <Button
+                android:id="@+id/input_achieve"
+                android:layout_height="50dp"
+                android:layout_width="250dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_button"
+                android:text="录入完成"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
