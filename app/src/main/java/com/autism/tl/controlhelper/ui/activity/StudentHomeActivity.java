@@ -58,6 +58,8 @@ public class StudentHomeActivity extends BaseActivity {
     private DBHelper mHelper = DBHelper.getDBHelper();
     private ProgressDialog progressDialog;
 
+
+
     @Override
     public void initParms(Bundle parms) {
 
@@ -109,7 +111,7 @@ public class StudentHomeActivity extends BaseActivity {
 
                 break;
             case R.id.fab_5:
-
+                showToast("暂无数据");
                 break;
         }
         fab.close(true);
@@ -139,6 +141,7 @@ public class StudentHomeActivity extends BaseActivity {
                 //菜单点击逻辑处理
                 switch (item.getItemId()) {
                     case R.id.nav_change_password:
+                        showToast("暂无数据");
                         break;
                     case R.id.nav_change_admin:
                         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(StudentHomeActivity.this).edit();
@@ -199,8 +202,6 @@ public class StudentHomeActivity extends BaseActivity {
                 }).start();
                 LinearLayoutManager layoutManager = new LinearLayoutManager(StudentHomeActivity.this);
                 studentList.setLayoutManager(layoutManager);
-                studentList.addItemDecoration(new DividerItemDecoration(StudentHomeActivity.this,
-                        DividerItemDecoration.VERTICAL_LIST));
                 StudentHomeAdapter adapter = new StudentHomeAdapter(studentInfoList,mHelper.getImageList(studentInfoList));
                 studentList.setAdapter(adapter);
                 closeProgressDialog();

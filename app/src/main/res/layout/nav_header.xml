@@ -18,7 +18,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/user_picture"
         android:layout_marginTop="20dp"
-        android:text="唐亮"
+        android:text="唐奇兵"
         android:textColor="@color/white"
         android:textSize="18sp"/>
 

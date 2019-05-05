@@ -30,7 +30,7 @@ public abstract class BaseActivity extends Activity {
     /**
      * 是否禁止旋转屏幕
      **/
-    private boolean isAllowScreenRoate = true;
+    private boolean isAllowScreenRoate = false;
     /**
      * 当前Activity渲染的视图View
      **/
@@ -70,9 +70,9 @@ public abstract class BaseActivity extends Activity {
             }
             setContentView(mContextView);
             if (!isAllowScreenRoate) {
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
             } else {
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
             }
             doBusiness(this);
         } catch (Exception e) {

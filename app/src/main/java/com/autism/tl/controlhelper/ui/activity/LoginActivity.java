@@ -95,10 +95,10 @@ public class LoginActivity extends BaseActivity {
         String mpassword = password.getText().toString();
         if (madmin.equals("1") && mpassword.equals("123")) {
             User.getInstance().setClassId(15050402);
-            User.getInstance().setStudentId(1505040228);
+            User.getInstance().setStudentId(1505040201);
             startActivity(StudentHomeActivity.class);
         } else if (madmin.equals("2") && mpassword.equals("123")) {
-            User.getInstance().setStudentId(1503040213);
+            User.getInstance().setStudentId(1505040201);
             startActivity(ParentsHomeActivity.class);
         } else if (madmin.equals("3") && mpassword.equals("123")){
             User.getInstance().setGradeId(15);

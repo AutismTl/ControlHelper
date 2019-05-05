@@ -123,6 +123,26 @@ public class DBHelper {
                 .orderAsc(StudentInfoDao.Properties.Id)
                 .list();
     }
+
+    //搜索学生
+    public List<StudentInfo> searchStudent(String key,String value) {
+        if(key.equals("姓名")) {
+            return studentInfoDao.queryBuilder()
+                    .where(StudentInfoDao.Properties.Name.eq(value))
+                    .list();
+        } else if(key.equals("学号")) {
+            return studentInfoDao.queryBuilder()
+                    .where(StudentInfoDao.Properties.Id.eq(value))
+                    .orderAsc(StudentInfoDao.Properties.Id)
+                    .list();
+        } else{
+            return studentInfoDao.queryBuilder()
+                    .where(StudentInfoDao.Properties.Qq.eq(value))
+                    .orderAsc(StudentInfoDao.Properties.Id)
+                    .list();
+        }
+
+    }
     //存储全部学生信息
     public void loadAllStudentInfo(List<StudentInfo> studentInfoList) {
         studentInfoDao.deleteInTx(studentInfoDao.queryBuilder()

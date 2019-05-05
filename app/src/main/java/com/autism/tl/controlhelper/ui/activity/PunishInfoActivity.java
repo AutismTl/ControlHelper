@@ -98,7 +98,7 @@ public class PunishInfoActivity extends BaseActivity {
             @Override
             public void onError(Throwable e) {
                 closeProgressDialog();
-                showToast("加载失败，请检查网络连接");
+                showToast("暂无数据，请添加数据或检查网络连接");
             }
 
             @Override

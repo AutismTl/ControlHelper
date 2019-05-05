@@ -69,6 +69,10 @@ public class ParentsHomeActivity extends BaseActivity{
         setMainInfo();
     }
 
+    @OnClick(R.id.button)
+    public void explain(){
+        showToast("暂无数据");
+    }
     @OnClick({R.id.fab_1, R.id.fab_2, R.id.fab_3, R.id.fab_4,R.id.fab_5})
     public void getMoreInfo(View view) {
         Intent intent =new Intent(this, PunishInfoActivity.class);
@@ -91,7 +95,7 @@ public class ParentsHomeActivity extends BaseActivity{
 
                 break;
             case R.id.fab_5:
-
+                showToast("暂无数据");
                 break;
         }
         fab.close(true);
@@ -112,6 +116,7 @@ public class ParentsHomeActivity extends BaseActivity{
                     //                                          int[] grantResults)
                     // to handle the case where the user grants the permission. See the documentation
                     // for ActivityCompat#requestPermissions for more details.
+                    ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 0);
                     showToast("请先授予该应用拨打电话权限");
                     return;
                 }
@@ -149,6 +154,7 @@ public class ParentsHomeActivity extends BaseActivity{
                 //菜单点击逻辑处理
                 switch (item.getItemId()) {
                     case R.id.nav_change_password:
+                        showToast("暂无数据");
                         break;
                     case R.id.nav_change_admin:
                         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(ParentsHomeActivity.this).edit();

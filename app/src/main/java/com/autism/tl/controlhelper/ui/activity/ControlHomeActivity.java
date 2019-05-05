@@ -2,6 +2,7 @@ package com.autism.tl.controlhelper.ui.activity;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
@@ -90,6 +91,7 @@ public class ControlHomeActivity extends BaseActivity {
                 //菜单点击逻辑处理
                 switch(item.getItemId()){
                     case R.id.nav_change_password:
+                        showToast("暂无数据");
                         break;
                     case R.id.nav_change_admin:
                         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(ControlHomeActivity.this).edit();

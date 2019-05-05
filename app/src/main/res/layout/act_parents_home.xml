@@ -51,7 +51,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="4"
                     android:layout_height="match_parent"
-                    android:text="唐亮"
+                    android:text="唐奇兵"
                     android:layout_marginLeft="30dp"
                     android:gravity="center_vertical"
                     android:textSize="15dp"
@@ -130,7 +130,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="4"
                     android:layout_height="match_parent"
-                    android:text="7-6-510"
+                    android:text="7-6-509"
                     android:layout_marginLeft="30dp"
                     android:gravity="center_vertical"
                     android:textSize="15dp"
@@ -217,7 +217,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="4"
                     android:layout_height="match_parent"
-                    android:text="1503040213"
+                    android:text="1505040201"
                     android:layout_marginLeft="30dp"
                     android:gravity="center_vertical"
                     android:textSize="15dp"
@@ -377,9 +377,11 @@
 
 
         <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
+            android:padding="2dp"
             android:background="@drawable/bg_button"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"

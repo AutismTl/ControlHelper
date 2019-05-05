@@ -38,37 +38,52 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.StudentHomeActivity">
+        <activity android:name=".ui.activity.StudentHomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
 
         </activity>
-        <activity android:name=".ui.activity.ControlHomeActivity">
+        <activity android:name=".ui.activity.ControlHomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
 
         </activity>
-        <activity android:name=".ui.activity.ParentsHomeActivity">
+        <activity android:name=".ui.activity.ParentsHomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
 
         </activity>
-        <activity android:name=".ui.activity.ClassListActivity">
+        <activity android:name=".ui.activity.ClassListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
 
         </activity>
-        <activity android:name=".ui.activity.StudentInfoActivity">
+        <activity android:name=".ui.activity.StudentInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
 
         </activity>
-        <activity android:name=".ui.activity.StudentListActivity">
+        <activity android:name=".ui.activity.StudentListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
+
+        </activity>'
+        <activity android:name=".ui.activity.CheckStudentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
 
         </activity>
-        <activity android:name=".ui.activity.CheckStudentActivity">
+        <activity android:name=".ui.activity.PunishInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
 
         </activity>
-        <activity android:name=".ui.activity.PunishInfoActivity">
+        <activity android:name=".ui.activity.NightBackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
 
         </activity>
-        <activity android:name=".ui.activity.NightBackActivity">
+        <activity android:name=".ui.activity.MapActivtiy"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
 
         </activity>
-        <activity android:name=".ui.activity.MapActivtiy">
+        <activity android:name=".ui.activity.RespondActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
 
         </activity>
-        <activity android:name=".ui.activity.RespondActivity">
+        <activity android:name=".ui.activity.SearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale">
 
         </activity>
 

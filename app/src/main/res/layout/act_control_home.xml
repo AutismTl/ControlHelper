@@ -103,33 +103,32 @@
             android:layout_below="@id/top_linear" >
 
             <android.support.v7.widget.CardView
-                android:id="@+id/wj"
+                android:id="@+id/check_change"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
-
                 android:foreground="?android:attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_button"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_button">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         android:layout_marginTop="10dp"
-                        android:src="@drawable/ic_exam"
+                        android:src="@drawable/ic_score"
                         />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:text="违纪录入"
+                        android:text="查看(修改)"
                         android:gravity="center"
                         android:textSize="25sp"
                         android:textColor="@color/dull_grey"
@@ -177,41 +176,45 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/mid_linear">
+            android:layout_below="@id/mid_linear"
+            android:visibility="gone">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/check_change"
+                android:id="@+id/wj"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
+
                 android:foreground="?android:attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/bg_button">
+                    android:background="@drawable/bg_button"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         android:layout_marginTop="10dp"
-                        android:src="@drawable/ic_score"
+                        android:src="@drawable/ic_exam"
                         />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:text="查看(修改)"
+                        android:text="违纪录入"
                         android:gravity="center"
                         android:textSize="25sp"
                         android:textColor="@color/dull_grey"
                         />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
+
+
 
             <android.support.v7.widget.CardView
                 android:id="@+id/remark"
@@ -221,8 +224,7 @@
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:visibility="invisible">
+                android:foreground="?android:attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"

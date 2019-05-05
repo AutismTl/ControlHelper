@@ -67,6 +67,9 @@ public class NightBackActivity extends BaseActivity {
     @Override
     public void doBusiness(Context mContext) {
         ButterKnife.bind(this);
+        if (mHelper.getStudentInfoSize() == 0) {
+            questAllStudentInfo();
+        }
         icv.setInputCompleteListener(new AutoEditView.InputCompleteListener() {
             @Override
             public void inputComplete() {
@@ -74,7 +77,6 @@ public class NightBackActivity extends BaseActivity {
                     //如果输入法打开则关闭，如果没打开则打开
                     InputMethodManager m=(InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                     m.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
-
                     getAllStudentInfo(mHelper.getDormitory(icv.getTextContent()));
                 }
             }

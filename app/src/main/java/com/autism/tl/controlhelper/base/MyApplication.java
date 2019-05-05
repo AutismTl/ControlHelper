@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.autism.tl.greendao.gen.DaoMaster;
 import com.autism.tl.greendao.gen.DaoSession;
+import com.baidu.mapapi.SDKInitializer;
 
 /**
  * Created by 唐亮 on 2017/8/6.
@@ -17,6 +18,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        SDKInitializer.initialize(getApplicationContext());
         mContext = getApplicationContext();
 }
 

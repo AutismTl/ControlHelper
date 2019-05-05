@@ -65,7 +65,6 @@ public class MapActivtiy extends Activity implements RadarSearchListener,RadarUp
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         mLocationClient = new LocationClient(getApplicationContext());     //声明LocationClient类
         mLocationClient.registerLocationListener(new MyLocationListener());    //注册监听函数
-        SDKInitializer.initialize(getApplicationContext());
         setContentView(R.layout.act_map);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         //透明导航栏
@@ -155,7 +154,7 @@ public class MapActivtiy extends Activity implements RadarSearchListener,RadarUp
         }else {
             RadarUploadInfo info = new RadarUploadInfo();
             SharedPreferences prefs= PreferenceManager.getDefaultSharedPreferences(this);
-            info.comments = prefs.getString("id","NULL");
+            info.comments = prefs.getString("id","唐奇兵");
             info.pt = pt;
             mManager.uploadInfoRequest(info);
         }
@@ -182,7 +181,7 @@ public class MapActivtiy extends Activity implements RadarSearchListener,RadarUp
     public RadarUploadInfo onUploadInfoCallback() {
         RadarUploadInfo info = new RadarUploadInfo();
         SharedPreferences prefs= PreferenceManager.getDefaultSharedPreferences(this);
-        info.comments = prefs.getString("id","NULL");
+        info.comments = prefs.getString("id","唐奇兵");
         info.pt = pt;
         return info;
     }
@@ -285,6 +284,7 @@ public class MapActivtiy extends Activity implements RadarSearchListener,RadarUp
 
     private void requestLocation() {
         LocationClientOption option = new LocationClientOption();
+        option.setOpenGps(true);
         option.setScanSpan(5000);
         option.setIsNeedAddress(true);
         option.setCoorType("bd09ll"); // 设置坐标类型

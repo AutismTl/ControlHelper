@@ -93,7 +93,7 @@ public class CheckStudentActivity extends BaseActivity{
 
                 break;
             case R.id.fab_5:
-
+                showToast("暂无数据");
                 break;
         }
         fab.close(true);
@@ -149,8 +149,6 @@ public class CheckStudentActivity extends BaseActivity{
                 }).start();
                 LinearLayoutManager layoutManager = new LinearLayoutManager(CheckStudentActivity.this);
                 studentList.setLayoutManager(layoutManager);
-                studentList.addItemDecoration(new DividerItemDecoration(CheckStudentActivity.this,
-                        DividerItemDecoration.VERTICAL_LIST));
                 StudentHomeAdapter adapter = new StudentHomeAdapter(studentInfoList,mHelper.getImageList(studentInfoList));
                 studentList.setAdapter(adapter);
                 closeProgressDialog();

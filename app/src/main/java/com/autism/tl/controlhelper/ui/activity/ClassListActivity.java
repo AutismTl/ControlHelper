@@ -77,6 +77,11 @@ public class ClassListActivity extends BaseActivity {
         setFab();
     }
 
+    @OnClick(R.id.search)
+    public void search(){
+        startActivity(SearchActivity.class);
+    }
+
     @OnClick({R.id.fab_1, R.id.fab_2, R.id.fab_3, R.id.fab_4})
     public void changeList(View view) {
         switch (view.getId()) {
@@ -167,8 +172,6 @@ public class ClassListActivity extends BaseActivity {
                 }).start();
                 LinearLayoutManager layoutManager = new LinearLayoutManager(ClassListActivity.this);
                 classList.setLayoutManager(layoutManager);
-                classList.addItemDecoration(new DividerItemDecoration(ClassListActivity.this,
-                        DividerItemDecoration.VERTICAL_LIST));
                 ClassListAdapter adapter = new ClassListAdapter(classInfoList,type);
                 classList.setAdapter(adapter);
                 closeProgressDialog();
